@@ -37,10 +37,14 @@
 //             document.write(5 +"*"+i+"="+5*i+"<br>");
 //         }
         function displayInfo(){
+            document.write("This is a function definition"+"<br>");
             document.write("This is a function definition");
         }
-
+        function getInfo(){
+            document.write("This is a getInfo function in javascript")
+        }
     </script>
-    <button onclick="displayInfo()"> click me</button>
+    <button onDblclick="displayInfo()"> click me</button>
+    <input type="submit" value="submit" onmouseover="getInfo()"/>
 </body>
 </html>
