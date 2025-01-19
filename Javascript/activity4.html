@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Operators Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Operators Demo</h1>
+  <h2>Output:</h2>
+  <pre id="output"></pre>
+  
+  <script>
+    let output = "";
+
+    // Arithmetic Operations
+    const a = 10, b = 3;
+    output += `Arithmetic Operations:\n`;
+    output += `Addition: ${a + b}\n`;
+    output += `Subtraction: ${a - b}\n`;
+    output += `Multiplication: ${a * b}\n`;
+    output += `Division: ${a / b}\n`;
+    output += `Modulus: ${a % b}\n`;
+    output += `Exponentiation: ${a ** b}\n\n`;
+
+    // Comparison Operations
+    output += `Comparison Operations:\n`;
+    output += `Equal to (==): ${a == b}\n`;
+    output += `Not equal to (!=): ${a != b}\n`;
+    output += `Strict equal to (===): ${a === b}\n`;
+    output += `Strict not equal to (!==): ${a !== b}\n\n`;
+
+    // Logical Operations
+    const x = true, y = false;
+    output += `Logical Operations:\n`;
+    output += `AND (x && y): ${x && y}\n`;
+    output += `OR (x || y): ${x || y}\n`;
+    output += `NOT (!x): ${!x}\n\n`;
+
+    // Assignment Operations
+    let c = 5;
+    output += `Assignment Operations:\n`;
+    c += 3; // c = c + 3
+    output += `c += 3: ${c}\n`;
+    c -= 2; // c = c - 2
+    output += `c -= 2: ${c}\n\n`;
+
+    // Ternary Operator
+    output += `Ternary Operator:\n`;
+    output += `Is a > b? ${a > b ? 'Yes' : 'No'}\n\n`;
+
+    // Bitwise Operations
+    const d = 5, e = 2; // 5 -> 0101, 2 -> 0010 in binary
+    output += `Bitwise Operations:\n`;
+    output += `Bitwise AND (d & e): ${d & e}\n`;
+    output += `Bitwise OR (d | e): ${d | e}\n`;
+    output += `Bitwise XOR (d ^ e): ${d ^ e}\n`;
+    output += `Bitwise NOT (~d): ${~d}\n`;
+    output += `Left Shift (d << 1): ${d << 1}\n`;
+    output += `Right Shift (d >> 1): ${d >> 1}\n`;
+
+    // Display the output on the webpage
+    document.getElementById("output").textContent = output;
+    // Also log it to the console
+    console.log(output);
+  </script>
+</body>
+</html>
